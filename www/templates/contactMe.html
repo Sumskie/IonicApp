@@ -1,0 +1,26 @@
+<ion-view title="Contact Me" id="page4">
+  <ion-content padding="true" class="has-header">
+    <form id="contactMe-form2" class="list">
+      <ion-toggle toggle-class="toggle-positive" id="contactMe-toggle3">Receive emails about my art?</ion-toggle>
+      <label class="item item-input" id="contactMe-input3">
+        <span class="input-label">Name</span>
+        <input id = "input1" type="text" placeholder="">
+              </label>
+      <label class="item item-input" id="contactMe-input4">
+        <span class="input-label">Email</span>
+        <input id = "input2" type="text" placeholder="">
+      </label>
+      <label class="item item-input" id="contactMe-input5">
+        <span class="input-label">Phone</span>
+        <input id = "input3"type="text" placeholder="">
+      </label>
+    </form>
+    <button type = "button" onclick = "localStorage.setItem('firstName', document.getElementById('input1').value), localStorage.setItem('email', document.getElementById('input2').value), localStorage.setItem('phone', document.getElementById('input3').value)">Submit</button>
+
+          <button type = "button" onclick="document.getElementById('Check').innerHTML = localStorage.getItem('firstName'), document.getElementById('Check2').innerHTML = localStorage.getItem('email'), document.getElementById('Check3').innerHTML = localStorage.getItem('phone')">Check Storage</button>
+
+          <p id="Check"></p>
+          <p id="Check2"></p>
+          <p id="Check3"></p>
+  </ion-content>
+</ion-view>
